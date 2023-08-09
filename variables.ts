@@ -25,7 +25,7 @@ let point: { x: number; y: number } = {
 	y: 20,
 }
 
-//function -> (i: number) => void <- descripton of function
+//function -> (i: number) => void <- description of function to logNumber variable
 const logNumber: (i: number) => void = (i: number) => {
 	console.log(i)
 }
