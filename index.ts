@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const url = 'https://jsonplaceholder.typicode.com/todos/1'
 
-//interface digunakan sebagai struktur dasar untuk object
+//interface menentukan struktur dasar dari object
 interface Todo {
 	id: number
 	title: string
