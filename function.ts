@@ -17,3 +17,24 @@ function divide(a: number, b: number): number {
 const multiply = function (a: number, b: number): number {
 	return a * b
 }
+
+//use type :void if function doesnt return anything
+// or use never if never return anything
+const logger = (message: string): void => {
+	console.log(message)
+}
+
+//but this is rare
+const throwError = (message: string): never => {
+	throw new Error(message)
+}
+
+//destructuring with anotation in typescript
+const forecast = {
+	date: new Date(),
+	weather: 'sunny',
+}
+
+const logWeather = ({ date, weather }: { date: Date; weather: string }) => {
+	console.log(date, weather)
+}
